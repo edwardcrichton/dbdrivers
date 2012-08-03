@@ -133,6 +133,9 @@ net.sourceforge.jtds.jdbc.Driver
 jdbc:jtds:sqlserver://${host}
 jdbc:jtds:sqlserver://${host}:${port}
 jdbc:jtds:sqlserver://${host}:${port}/${database}
+jdbc:jtds:sqlserver://${host};instance=${instance}
+jdbc:jtds:sqlserver://${host}:${port};instance=${instance}
+jdbc:jtds:sqlserver://${host}:${port}/${database};instance=${instance}
 
 jTDS - Sybase
 net.sourceforge.jtds.jdbc.Driver
