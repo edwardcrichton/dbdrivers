@@ -28,15 +28,7 @@ try
 }
 catch(Exception ex)
 {
-         try
-        {
-                connection.close();
-        }
-        catch(Throwable th)
-        {
-                
-        }
-        return;
+         ...
 }
 
 ...
