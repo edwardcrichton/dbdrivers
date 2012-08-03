@@ -1,0 +1,308 @@
+Apache Derby Embedded
+org.apache.derby.jdbc.EmbeddedDriver
+jdbc:derby:${database}
+
+Apache Derby Client
+org.apache.derby.jdbc.ClientDriver
+jdbc:derby://${host}:${port}/${database}
+
+Cloudscape
+COM.cloudscape.core.JDBCDriver
+jdbc:cloudscape:${database}
+
+Cloudscape RMI
+RmiJdbc.RJDriver
+jdbc:rmi://${host}:${port}/jdbc:cloudscape:${database}
+
+Firebird
+org.firebirdsql.jdbc.FBDriver
+jdbc:firebirdsql:${database}
+jdbc:firebirdsql://${host}/${database}
+jdbc:firebirdsql://${host}:$port/${database}
+
+FirstSQL
+COM.FirstSQL.Dbcp.DbcpDriver
+jdbc:dbcp://local
+jdbc:dbcp://${host}:${port}
+
+Hyper SQL
+org.hsqldb.jdbcDriver
+jdbc:hsqldb:.
+jdbc:hsqldb:${database}
+jdbc:hsqldb:hsql://${host}
+jdbc:hsqldb:hsql://${host}:${port}
+
+Hyper SQL - Webserver
+org.hsqldb.jdbcDriver
+jdbc:hsqldb:http://${host}
+jdbc:hsqldb:http://${host}:${port}
+
+Hypersonic SQL v1.2+
+hSql.hDriver
+jdbc:HypersonicSQL:${database}
+
+Hypersonic SQL v1.3+
+org.hsql.jdbcDriver
+jdbc:HypersonicSQL:${database}
+
+IBM DB2 - Universal
+com.ibm.db2.jcc.DB2Driver
+jdbc:db2:default:connection
+jdbc:db2:${database}
+jdbc:db2://${host}/${database}
+jdbc:db2://${host}:${port}/${database}
+jdbc:db2:${database}:user={$user};password={$password}
+jdbc:db2:default:connection:user={$user};password={$password}
+jdbc:db2://${host}/${database}:user={$user};password={$password}
+jdbc:db2://${host}:${port}/${database}:user={$user};password={$password}
+jdbc:db2j:net://${host}/${database}
+jdbc:db2j:net://${host}:${port}/${database}
+jdbc:db2j:net://${host}/${database}:user={$user};password={$password}
+jdbc:db2j:net://${host}:${port}/${database}:user={$user};password={$password}
+
+IBM DB2
+COM.ibm.db2.jdbc.app.DB2Driver
+jdbc:db2:${database}
+jdbc:db2://${host}/${database}
+jdbc:db2://${host}:${port}/${database}
+
+IBM DB2 - Net
+COM.ibm.db2.jdbc.net.DB2Driver
+jdbc:db2:${database}
+jdbc:db2://${host}/${database}
+jdbc:db2://${host}:${port}/${database}
+
+IBM DB2 - DataDirect
+com.ddtek.jdbc.db2.DB2Driver
+jdbc:datadirect:db2://${host}
+jdbc:datadirect:db2://${host}:${port}
+jdbc:datadirect:db2://${host};databaseName=${database}
+jdbc:datadirect:db2://${host}:${port};databaseName=${database}
+
+IBM DB2 - Sun
+com.sun.sql.jdbc.db2.DB2Driver
+jdbc:sun:db2://${host}
+jdbc:sun:db2://${host}:${port}
+jdbc:sun:db2://${host};databaseName=${database}
+jdbc:sun:db2://${host}:${port};databaseName=${database}
+
+IDS Server
+ids.sql.IDSDriver
+jdbc:ids://${host}:${port}/conn?dsn='${data source name}'
+
+Informix Dynamic Server
+com.informix.jdbc.IfxDriver
+jdbc:informix-sqli://${host}:${port}/${database}:INFORMIXSERVER=${server name}
+
+Informix Dynamic Server - DataDirect
+com.ddtek.jdbc.informix.InformixDriver
+jdbc:datadirect:informix://${host}:${port};informixServer=${server};databaseName=${database}
+
+Ingres
+ca.edbc.jdbc.EdbcDriver
+jdbc:edbc://${host}/${database}
+jdbc:edbc://${host}:${port}/${database}
+
+InstantDB
+jdbc.idbDriver
+jdbc:idb:${database}
+
+InstantDB v3.14+
+org.enhydra.instantdb.jdbc.idbDriver
+jdbc:idb:${database}
+
+Interbase
+interbase.interclient.Driver
+jdbc:interbase://${host}/${database}
+
+JDBC-ODBC Bridge
+sun.jdbc.odbc.JdbcOdbcDriver
+jdbc:odbc:${database}
+
+Java DB - Embedded
+org.apache.derby.jdbc.EmbeddedDriver
+jdbc:derby:${database}
+
+Java DB
+org.apache.derby.jdbc.ClientDriver
+jdbc:derby://${host}/${database}
+jdbc:derby://${host}:${port}/${database}
+
+jTDS - Microsoft SQL Server
+net.sourceforge.jtds.jdbc.Driver
+jdbc:jtds:sqlserver://${host}
+jdbc:jtds:sqlserver://${host}:${port}
+jdbc:jtds:sqlserver://${host}:${port}/${database}
+
+jTDS - Sybase
+net.sourceforge.jtds.jdbc.Driver
+jdbc:jtds:sybase://${host}
+jdbc:jtds:sybase://${host}:${port}
+jdbc:jtds:sybase://${host}:${port}/${database}
+
+Mckoi SQL Database
+com.mckoi.JDBCDriver
+jdbc:mckoi:local://${database}
+jdbc:mckoi://${host}
+jdbc:mckoi://${host}:${port}
+
+Microsoft SQL Server - Microsoft 2000
+com.microsoft.sqlserver.jdbc.SQLServerDriver
+jdbc:sqlserver://${host};DatabaseName=${database}
+jdbc:sqlserver://${host}:${port};DatabaseName=${database}
+jdbc:sqlserver://${host};DatabaseName=${database};user=${user};password=${password}
+jdbc:sqlserver://${host}:${port};DatabaseName=${database};user=${user};password=${password}
+jdbc:microsoft:sqlserver://${host};DatabaseName=${database}
+jdbc:microsoft:sqlserver://${host}:${port};DatabaseName=${database}
+jdbc:microsoft:sqlserver://${host};DatabaseName=${database};user=${user};password=${password}
+jdbc:microsoft:sqlserver://${host}:${port};DatabaseName=${database};user=${user};password=${password}
+
+Microsoft SQL Server - Microsoft 2005
+com.microsoft.sqlserver.jdbc.SQLServerDriver
+jdbc:sqlserver://${host};databaseName=${database}
+jdbc:sqlserver://${host}:${port};databaseName=${database}
+jdbc:sqlserver://${host};databaseName=${database};user=${user};password=${password}
+jdbc:sqlserver://${host}:${port};databaseName=${database};user=${user};password=${password}
+jdbc:microsoft:sqlserver://${host};databaseName=${database}
+jdbc:microsoft:sqlserver://${host}:${port};databaseName=${database}
+jdbc:microsoft:sqlserver://${host};databaseName=${database};user=${user};password=${password}
+jdbc:microsoft:sqlserver://${host}:${port};databaseName=${database};user=${user};password=${password}
+
+Microsoft SQL Server - JTurbo
+com.ashna.jturbo.driver.Driver
+jdbc:JTurbo://${host}:${port}/${database}
+
+Microsoft SQL Server - Sprinta
+com.inet.tds.TdsDriver
+jdbc:inetdae:${host}:${port}?database=${database}
+
+Microsoft SQL Server - Weblogic
+weblogic.jdbc.mssqlserver4.Driver
+jdbc:weblogic:mssqlserver4:${database}@${host}:${port}
+
+Microsoft SQL Server - DataDirect
+com.ddtek.jdbc.sqlserver.SQLServerDriver
+jdbc:datadirect:sqlserver://${host}:${port}
+jdbc:datadirect:sqlserver://${host}:${port};databaseName=${database}
+
+Microsoft SQL Server - Sun
+com.sun.sql.jdbc.sqlserver.SQLServerDriver
+jdbc:sun:sqlserver://${host}
+jdbc:sun:sqlserver://${host}:${port}
+
+Mimer
+com.mimer.jdbc.Driver
+jdbc:mimer:multi1
+
+MySQL - MM
+org.gjt.mm.mysql.Driver
+jdbc:mysql://localhost/${database}
+jdbc:mysql://localhost:${port}/${database}
+jdbc:mysql://${host}/${database}
+jdbc:mysql://${host}:${port}/${database}
+jdbc:mysql://localhost/${database}?user=${user}&password=${password}
+jdbc:mysql://localhost:${port}/${database}?user=${user}&password=${password}
+jdbc:mysql://${host}/${database}?user=${user}&password=${password}
+jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}
+
+MySQL - Connector/J
+com.mysql.jdbc.Driver
+jdbc:mysql://localhost/${database}
+jdbc:mysql://localhost:${port}/${database}
+jdbc:mysql://${host}/${database}
+jdbc:mysql://${host}:${port}/${database}
+jdbc:mysql://localhost/${database}?user=${user}&password=${password}
+jdbc:mysql://localhost:${port}/${database}?user=${user}&password=${password}
+jdbc:mysql://${host}/${database}?user=${user}&password=${password}
+jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}
+
+Oracle Thin
+oracle.jdbc.driver.OracleDriver
+jdbc:oracle:thin:@localhost:${port}:${system identifier}
+jdbc:oracle:thin:@localhost/${system identifier}
+jdbc:oracle:thin:@${host}:${port}/${system identifier}
+jdbc:oracle:thin:@${host}/${system identifier}
+jdbc:oracle:thin:${user}/${password}@localhost:${port}/${system identifier}
+jdbc:oracle:thin:${user}/${password}@localhost/${system identifier}
+jdbc:oracle:thin:${user}/${password}@${host}:${port}/${system identifier}
+jdbc:oracle:thin:${user}/${password}@${host}/${system identifier}
+jdbc:oracle:thin:@localhost:${port}/XE
+jdbc:oracle:thin:@localhost/XE
+jdbc:oracle:thin:@${host}:${port}/XE
+jdbc:oracle:thin:@${host}/XE
+jdbc:oracle:thin:${user}/${password}@localhost:${port}/XE
+jdbc:oracle:thin:${user}/${password}@localhost/XE
+jdbc:oracle:thin:${user}/${password}@${host}:${port}/XE
+jdbc:oracle:thin:${user}/${password}@${host}/XE
+
+Oracle OCI 8i
+oracle.jdbc.driver.OracleDriver
+jdbc:oracle:oci8:@${system identifier}
+jdbc:oracle:oci8:${user}/${password}@${system identifier}
+
+Oracle OCI 9i+
+oracle.jdbc.driver.OracleDriver
+jdbc:oracle:oci:@${system identifier}
+jdbc:oracle:oci:${user}/${password}@${system identifier}
+
+Oracle - DataDirect
+com.ddtek.jdbc.oracle.OracleDriver
+jdbc:datadirect:oracle://${host}:${port};SID=${system identifier}
+
+Oracle - Sun
+com.sun.sql.jdbc.oracle.OracleDriver
+jdbc:sun:oracle:${host}
+jdbc:sun:oracle:${host}:${port}
+jdbc:sun:oracle:${host};SID=${system identifier}
+jdbc:sun:oracle:${host}:${port};SID=${system identifier}
+
+PointBase
+com.pointbase.jdbc.jdbcUniversalDriver
+jdbc:pointbase:${database}
+jdbc:pointbase://${host}/${database}
+jdbc:pointbase://${host}:${port}/${database}
+jdbc:pointbase://embedded/${database}
+jdbc:pointbase://embedded:$port/${database}
+
+PostgreSQL
+postgresql.Driver
+jdbc:postgresql:${database}
+jdbc:postgresql://${host}/${database}
+jdbc:postgresql://${host}:${port}/${database}
+
+PostgreSQL v7.0+
+org.postgresql.Driver
+jdbc:postgresql:${database}
+jdbc:postgresql://${host}/${database}
+jdbc:postgresql://${host}:${port}/${database}
+
+Quadcap
+com.quadcap.jdbc.JdbcDriver
+jdbc:qed:${database}
+
+SAP
+com.sap.dbtech.jdbc.DriverSapDB
+jdbc:sapdb://${host}/${database}
+jdbc:sapdb://${host}:${port}/${database}
+
+Sybase
+com.sybase.jdbc.SybDriver
+jdbc:sybase:Tds:${host}:${port}
+
+Sybase - jConnect 5.2+
+com.sybase.jdbc2.jdbc.SybDriver 
+jdbc:sybase:Tds:${host}:${port}
+
+Sybase - DataDirect
+com.ddtek.jdbc.sybase.SybaseDriver
+jdbc:datadirect:sybase://${host}:${port}
+jdbc:datadirect:sybase://${host}:${port};databaseName=${database}
+
+Sybase - Sun
+com.sun.sql.jdbc.sybase.SybaseDriver
+jdbc:sun:sybase:${host}:${port}
+
+TimesTen
+com.timesten.jdbc.TimesTenDriver
+jdbc:timesten:direct:${database}
+

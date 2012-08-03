@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <project name="methods.makejar" default="makejar" basedir=".">
+  
+  <property name="jarname" value="dbdrivers"/>
+  
+  <!-- leave: -->
+  <property name="outputdir" value="${basedir}/../TEMP${jarname}"/>
+  
+  <target name="clean" description="cleans">
+    
+    <delete dir="bin/dbdrivers"/>
+	<delete file="bin/jdbcdrivers.txt"/>
+    <!-- make sure not to delete own project! note the TEMP above -->
+    <delete dir="${outputdir}"/>
+  	
+  </target>
+  
+  <target name="compile" description="compiles">
+    
+    <antcall target="clean"/>
+    
+    <mkdir dir="bin/"/>
+    <mkdir dir="${outputdir}" />
+  	
+	<javac srcdir="src/dbdrivers" classpath="src/." destdir="bin/"  debug="on"/>
+	
+  </target>
+  
+  <target name="makejar" description="Creates the jar">
+  
+  <antcall target="compile"/>
+  
+  	<copy todir="bin/" overwrite="true">
+  	      <fileset dir="src/">
+  	        <include name="jdbcdrivers.txt"/>
+  	      </fileset>
+  	    </copy>
+  	
+  	<delete dir="${outputdir}/../${jarname}.jar"/>
+    <jar jarfile="${outputdir}/../${jarname}.jar" includes="**/*" basedir="bin/"/>
+    
+    <antcall target="clean"/>
+  	
+  </target>
+  
+  </project>
